@@ -1,0 +1,22 @@
+{% extends 'Second.html'%}
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/window">
+    <h1 class="page-header text-primary" style="margin-top:100px;margin-left:200px">Login Page </h1>
+    <div class="col-md-4 offset-md-6">
+        <h2 class="text-white">Enter your credentials</h2>
+        <div class="form-group">
+            <input type="text" name="user" placeholder="Enter Username" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" name="passw" placeholder="Enter Password" class="form-control">
+        </div>
+        <div>
+            <input type="submit" value="Login" class="btn btn-info">
+        </div>
+    </div>
+</form>
+{% endblock %}
